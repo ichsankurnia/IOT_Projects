@@ -1,0 +1,4 @@
+#Tue Oct 23 22:22:15 ICT 2018
+base.0=D\:\\Ichsan\\Kuliah\\Android Project\\Bismillah\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+renamed.0=classes.dex
+path.0=classes.dex

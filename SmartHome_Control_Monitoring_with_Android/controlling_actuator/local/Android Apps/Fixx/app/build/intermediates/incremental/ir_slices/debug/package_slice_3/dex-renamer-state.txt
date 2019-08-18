@@ -1,0 +1,4 @@
+#Tue Oct 09 19:15:01 ICT 2018
+base.0=D\:\\Ichsan\\Kuliah\\Android Project\\Fixx\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+renamed.0=classes.dex
+path.0=classes.dex
