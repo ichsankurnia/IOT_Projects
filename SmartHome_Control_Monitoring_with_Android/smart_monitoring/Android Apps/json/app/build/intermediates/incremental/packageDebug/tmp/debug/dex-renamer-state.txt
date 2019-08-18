@@ -1,4 +1,0 @@
-#Thu Oct 25 21:22:52 ICT 2018
-base.0=D\:\\Ichsan\\Kuliah\\Android Project\\json\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-renamed.0=classes.dex
-path.0=classes.dex

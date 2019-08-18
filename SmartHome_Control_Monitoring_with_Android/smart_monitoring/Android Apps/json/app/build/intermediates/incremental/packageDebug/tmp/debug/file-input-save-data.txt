@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Sun Oct 21 21:19:34 ICT 2018
-0.base=D\:\\Ichsan\\Kuliah\\Android Project\\json\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-0.path=classes.dex
-count=1
-0.baseType=DIRECTORY
-0.set=DEX
