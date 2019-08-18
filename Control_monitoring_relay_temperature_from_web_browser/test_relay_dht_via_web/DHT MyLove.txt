@@ -1,0 +1,49 @@
+#include "DHT.h" // ini buat library dht sayang
+#define DHTTYPE DHT11 //ini tipe dht nya
+
+const int DHTPin = D1; //kaki data buat dht nya di nodeMCU kamu
+int kipas = D2; //ini kaki kipas di nodeMCU
+
+DHT dht(DHTPin, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+
+  pinMode(kipas,OUTPUT);
+
+  digitalWrite(kipas, LOW); //kondisi awal kipas beb
+
+}
+
+void loop() {
+  float humi = dht.readHumidity();
+  float temp = dht.readTemperature();
+
+  if (isnan(humi) || isnan(temp)) //ini buat kalau dht nya ga kebaca sayang atau dht nya ga connect ke devicenya
+  {
+    Serial.println("Gagal membaca DHT!");
+  }else{
+    Serial.print("Humidity : ");              
+    Serial.print(humi);
+    Serial.println("%");
+              
+    Serial.print("Temperatur : ");
+    Serial.print(temp);
+    Serial.print(" *C ");
+    delay(500);
+  }
+
+  if(temp>37 || humi<40)
+  {
+    digitalWrite(kipas,HIGH);
+  }
+  else if(temp<35)
+  {
+    digitalWrite(kipas,LOW);
+  }
+  else
+  {
+    digitalWrite(kipas,LOW);
+  }
+}
